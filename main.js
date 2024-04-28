@@ -1,3 +1,8 @@
+/*
+Message: the text you want typed out
+lps: the number of letters to type per second
+id: id of the HTML tag you are typing it into
+*/
 function typeText(message, lps, id) {
     if (message == "")
         return;
