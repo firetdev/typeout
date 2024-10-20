@@ -6,7 +6,7 @@ id: id of the HTML tag you are typing it into
 var inTag = false;
 function typeText(message, lps, id) {
     if (inTag) {
-        document.getElementById(id).innerHTML = document.getElementById(id).innerHTML.replace(new RegExp("<\/[[a-zA-Z][^>]*>", "g"), "");
+        document.getElementById(id).innerHTML = document.getElementById(id).innerHTML.replace(new RegExp("<\/[a-zA-Z][^>]*>", "g"), "");
     }
     if (message == "")
         return;
